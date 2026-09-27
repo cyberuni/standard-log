@@ -128,8 +128,8 @@ importers:
         specifier: ^2.1.3
         version: 2.1.3
       type-plus:
-        specifier: 8.0.0-beta.10
-        version: 8.0.0-beta.10(typescript@7.0.2)
+        specifier: 8.0.0-beta.11
+        version: 8.0.0-beta.11(typescript@7.0.2)
     devDependencies:
       '@repobuddy/vitest':
         specifier: ^2.1.1
@@ -2358,6 +2358,11 @@ packages:
     peerDependencies:
       typescript: '>= 5.6.0'
 
+  type-plus@8.0.0-beta.11:
+    resolution: {integrity: sha512-8/QsyrWhzvUpq7HREOUR4T4sVMiVMBYvMLH9brYvfwc0Nr71a2mPAafrWwg6W5EWsgIr0TUBHBNtwO8neKZUUg==}
+    peerDependencies:
+      typescript: '>= 5.4.0'
+
   types-ramda@0.32.0:
     resolution: {integrity: sha512-iZtriSUdsDqOlip/wUaDNcoiskbVf5RdcqLNpQdUcOM1JKFClochCvPZCDjn/cc9HzoBzi4DEB4iPr1PbrhN1w==}
 
@@ -3598,7 +3603,7 @@ snapshots:
       path-equal: 1.2.8
       satisfier: 5.4.4
       tersify: 4.0.6
-      type-plus: 8.0.0-beta.10(typescript@7.0.2)
+      type-plus: 8.0.0-beta.11(typescript@7.0.2)
     transitivePeerDependencies:
       - typescript
 
@@ -4475,6 +4480,12 @@ snapshots:
       '@turbo/windows-arm64': 2.9.14
 
   type-plus@8.0.0-beta.10(typescript@7.0.2):
+    dependencies:
+      tersify: 4.0.6
+      typescript: 7.0.2
+      unpartial: 1.0.7
+
+  type-plus@8.0.0-beta.11(typescript@7.0.2):
     dependencies:
       tersify: 4.0.6
       typescript: 7.0.2

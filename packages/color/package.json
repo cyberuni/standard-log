@@ -77,7 +77,7 @@
 		"rimraf": "^6.0.0",
 		"satisfier": "^5.4.4",
 		"standard-log": "workspace:*",
-		"tsdown": "^0.22.14",
+		"tsdown": "^0.23.0",
 		"typescript": "^7.0.2",
 		"vitest": "^4.1.0"
 	},

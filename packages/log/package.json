@@ -83,7 +83,7 @@
 		"dirname-filename-esm": "^1.1.1",
 		"ramda": "^0.32.0",
 		"rimraf": "^6.0.0",
-		"tsdown": "^0.22.14",
+		"tsdown": "^0.23.0",
 		"typescript": "^7.0.2",
 		"vitest": "^4.1.0"
 	}

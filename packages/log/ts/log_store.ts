@@ -1,4 +1,4 @@
-import { mapKey, record, reduceByKey, reduceKey } from 'type-plus'
+import { mapKey, record, reduceByKey } from 'type-plus'
 import { createConsoleLogReporter } from './console.js'
 import { logLevels, toLogLevel, toLogLevelName } from './log_levels.js'
 import type { Logger, LogLevel, LogMethodNames, LogReporter, StandardLogOptions } from './types.js'
@@ -49,7 +49,7 @@ export function logLevelStore(options: LogLevelStoreOptions) {
 			return store.customLevels[name] ?? toLogLevel(name)
 		},
 		getAllLevels() {
-			return reduceKey(
+			return reduceByKey(
 				logLevels,
 				(result, name) => {
 					if (name !== 'none' && name !== 'all') result.push({ name, level: logLevels[name] })

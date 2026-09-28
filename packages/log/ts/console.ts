@@ -1,4 +1,4 @@
-import { unpartial } from 'type-plus'
+import { unpartial } from 'unpartial'
 import { consoleFormatter } from './formatter.js'
 import { logLevels } from './log_levels.js'
 import { polyfill } from './platform.js'

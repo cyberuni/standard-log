@@ -1,5 +1,11 @@
 # Change Log
 
+## 13.3.1
+
+### Patch Changes
+
+- 654cdb4: Update `unpartial` to `^1.0.8`.
+
 ## 13.3.0
 
 ## 13.2.0

@@ -12,6 +12,11 @@
 			"description": "Majors break builds in ways CI catches but a human should choose to absorb.",
 			"matchUpdateTypes": ["major"],
 			"automerge": false
+		},
+		{
+			"description": "supports-color 9+ is ESM-only; standard-log-color ships a CommonJS build (see cjsCompat.spec.ts). Lift when the CJS build is dropped.",
+			"matchPackageNames": ["supports-color", "@types/supports-color"],
+			"allowedVersions": "<9"
 		}
 	]
 }

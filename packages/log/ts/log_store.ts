@@ -1,6 +1,6 @@
-import { mapKey, record, reduceByKey } from 'type-plus'
 import { createConsoleLogReporter } from './console.js'
 import { logLevels, toLogLevel, toLogLevelName } from './log_levels.js'
+import { record } from './record.js'
 import type { Logger, LogLevel, LogMethodNames, LogReporter, StandardLogOptions } from './types.js'
 
 export function createLogStore<N extends string = LogMethodNames>(
@@ -32,8 +32,7 @@ export function logLevelStore(options: LogLevelStoreOptions) {
 
 	const store = {
 		customLevels,
-		customLevelsReverse: reduceByKey(
-			customLevels,
+		customLevelsReverse: Object.keys(customLevels).reduce(
 			(p, k) => {
 				p[customLevels[k]] = k
 				return p
@@ -49,14 +48,13 @@ export function logLevelStore(options: LogLevelStoreOptions) {
 			return store.customLevels[name] ?? toLogLevel(name)
 		},
 		getAllLevels() {
-			return reduceByKey(
-				logLevels,
+			return (Object.keys(logLevels) as Array<keyof typeof logLevels>).reduce(
 				(result, name) => {
 					if (name !== 'none' && name !== 'all') result.push({ name, level: logLevels[name] })
 
 					return result
 				},
-				mapKey(store.customLevels, name => ({ name, level: store.customLevels[name] }))
+				Object.keys(store.customLevels).map(name => ({ name, level: store.customLevels[name] }))
 			)
 		}
 	}

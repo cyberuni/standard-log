@@ -48,7 +48,7 @@
 		"w": "vitest"
 	},
 	"devDependencies": {
-		"@repobuddy/vitest": "^2.3.0",
+		"@repobuddy/vitest": "^3.0.0",
 		"@types/node": "^24.0.0",
 		"depcheck": "^1.4.3",
 		"rimraf": "^6.0.0",

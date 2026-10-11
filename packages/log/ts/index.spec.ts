@@ -1,4 +1,4 @@
-import { testType } from 'type-plus'
+import { testType } from 'type-plus/testing'
 import { DEFAULT_LOG_METHOD_NAMES, type StandardLog, type StandardLogInstance } from './index.js'
 
 describe('type tests', () => {

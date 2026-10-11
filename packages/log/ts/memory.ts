@@ -1,5 +1,4 @@
-import { required } from 'type-plus'
-import { unpartial } from 'unpartial'
+import { required, unpartial } from 'unpartial'
 import { createConsoleLogReporter } from './console.js'
 import { formatLogLevel } from './formatter.js'
 import { toInspectLogEntry } from './platform.js'

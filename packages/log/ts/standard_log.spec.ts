@@ -1,5 +1,5 @@
 import { assertron as a } from 'assertron'
-import { testType } from 'type-plus'
+import { testType } from 'type-plus/testing'
 import { beforeEach, describe, expect, it, test } from 'vitest'
 import {
 	configGlobal,

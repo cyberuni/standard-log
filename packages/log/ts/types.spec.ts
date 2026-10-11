@@ -1,5 +1,5 @@
 import type { Stream } from 'node:stream'
-import { testType } from 'type-plus'
+import { testType } from 'type-plus/testing'
 import { test } from 'vitest'
 import type { LogFormatter, LogReporter } from './types.js'
 

@@ -1,7 +1,8 @@
-import { record, required } from 'type-plus'
+import { required } from 'unpartial'
 import { DEFAULT_LOG_METHOD_NAMES, logLevels } from './log_levels.js'
 import { createLogStore, type LogStore } from './log_store.js'
 import { createLogger } from './logger.js'
+import { record } from './record.js'
 import { ctx } from './standard_log.ctx.js'
 import type {
 	Logger,

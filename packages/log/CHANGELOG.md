@@ -1,5 +1,12 @@
 # Change Log
 
+## 13.3.2
+
+### Patch Changes
+
+- f8750f1: Inline the `type-plus` helpers and the `StackTraceMeta` type so the CommonJS build no longer depends on the ESM-only `type-plus` and `@just-func/types`.
+  Both packages are removed from `dependencies`.
+
 ## 13.3.1
 
 ### Patch Changes

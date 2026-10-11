@@ -51,7 +51,7 @@
 		"cross-fetch": "^4.0.0"
 	},
 	"devDependencies": {
-		"@repobuddy/vitest": "^2.3.0",
+		"@repobuddy/vitest": "^3.0.0",
 		"@types/node": "^24.0.0",
 		"assertron": "^11.6.0",
 		"depcheck": "^1.4.3",

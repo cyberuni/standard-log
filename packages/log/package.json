@@ -75,7 +75,7 @@
 		"unpartial": "^1.0.8"
 	},
 	"devDependencies": {
-		"@repobuddy/vitest": "^2.3.0",
+		"@repobuddy/vitest": "^3.0.0",
 		"@types/ms": "^2.0.0",
 		"@types/node": "^24.0.0",
 		"@types/ramda": "^0.32.0",

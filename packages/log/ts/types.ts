@@ -1,5 +1,3 @@
-import type { StackTraceMeta } from '@just-func/types'
-
 export type StandardLogOptions<CustomLevelNames extends string = LogMethodNames> = {
 	/**
 	 * A map of custom log levels.
@@ -20,7 +18,11 @@ export type StandardLogOptions<CustomLevelNames extends string = LogMethodNames>
 	reporters?: LogReporter[]
 }
 
-export interface LoggerOptions extends StackTraceMeta {
+export interface LoggerOptions {
+	/**
+	 * Stack start function: the stack trace is adjusted to start from this function.
+	 */
+	ssf?: (...args: any[]) => any
 	level?: number
 	writeTo?: LogReporter | ReporterFilter
 }

@@ -317,8 +317,8 @@ importers:
         specifier: ^0.23.0
         version: 0.23.0(typescript@7.0.2)
       type-plus:
-        specifier: 8.0.0
-        version: 8.0.0(typescript@7.0.2)
+        specifier: 8.0.1
+        version: 8.0.1(typescript@7.0.2)
       typescript:
         specifier: ^7.0.2
         version: 7.0.2
@@ -2487,6 +2487,15 @@ packages:
     peerDependencies:
       typescript: '>= 5.6.0'
 
+  type-plus@8.0.1:
+    resolution: {integrity: sha512-x1OtyTGuqmmnNu5+iL93KVsHLl6PMeRWUDN8yz+X4f86TuEcXSzX7EAdBK+3CFSp2jyVnQuzvof1Z/3Noc3Dig==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    peerDependencies:
+      typescript: '>= 5.4.0'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
   types-ramda@0.32.0:
     resolution: {integrity: sha512-iZtriSUdsDqOlip/wUaDNcoiskbVf5RdcqLNpQdUcOM1JKFClochCvPZCDjn/cc9HzoBzi4DEB4iPr1PbrhN1w==}
 
@@ -4502,6 +4511,12 @@ snapshots:
       tersify: 4.0.6
       typescript: 7.0.2
       unpartial: 1.0.8
+
+  type-plus@8.0.1(typescript@7.0.2):
+    dependencies:
+      unpartial: 1.0.8
+    optionalDependencies:
+      typescript: 7.0.2
 
   types-ramda@0.32.0:
     dependencies:

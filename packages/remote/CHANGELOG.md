@@ -1,5 +1,11 @@
 # standard-log-remote
 
+## 13.3.3
+
+### Patch Changes
+
+- 96bd5be: Include `CHANGELOG.md` in the published package.
+
 ## 13.3.2
 
 ## 13.3.1

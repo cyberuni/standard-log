@@ -51,7 +51,8 @@
 		"cjs",
 		"esm",
 		"ts",
-		"!**/*.spec.*"
+		"!**/*.spec.*",
+		"CHANGELOG.md"
 	],
 	"scripts": {
 		"build": "tsdown",

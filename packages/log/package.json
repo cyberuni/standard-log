@@ -55,7 +55,8 @@
 		"testing",
 		"ts",
 		"!**/*.{spec,test,unit,accept,integrate,system}.*",
-		"!**/test_utils.*"
+		"!**/test_utils.*",
+		"CHANGELOG.md"
 	],
 	"scripts": {
 		"build": "tsdown",

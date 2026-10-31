@@ -76,7 +76,7 @@
 	"devDependencies": {
 		"@repobuddy/vitest": "^3.0.0",
 		"@types/ms": "^2.0.0",
-		"@types/node": "^24.0.0",
+		"@types/node": "^26.0.0",
 		"@types/ramda": "^0.32.0",
 		"assertron": "^11.7.2",
 		"depcheck": "^1.4.3",

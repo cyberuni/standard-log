@@ -5,7 +5,7 @@ on:
 
 jobs:
   code:
-    uses: cyberuni/.github/.github/workflows/pnpm-verify.yml@v2
+    uses: repobuddy/.github/.github/workflows/pnpm-verify.yml@v2
     with:
       os: '["ubuntu-latest"]'
       skip-playwright: true
@@ -17,12 +17,12 @@ jobs:
   # It cannot live on the Version PR itself: that PR is opened with the built-in
   # GITHUB_TOKEN, which does not trigger `on: pull_request`, so it gets zero checks.
   publish-gate:
-    uses: cyberuni/.github/.github/workflows/pnpm-publish-gate.yml@v2
+    uses: repobuddy/.github/.github/workflows/pnpm-publish-gate.yml@v2
     permissions:
       contents: read
 
   release:
-    uses: cyberuni/.github/.github/workflows/pnpm-release-changeset-oidc.yml@v2
+    uses: repobuddy/.github/.github/workflows/pnpm-release-changeset-oidc.yml@v2
     needs: [code, publish-gate]
     permissions:
       actions: write

@@ -1,17 +1,12 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["github>unional/renovate-preset", ":dependencyDashboard"],
+	"extends": ["github>repobuddy/renovate-preset", ":dependencyDashboard"],
 	"platformAutomerge": true,
 	"packageRules": [
 		{
 			"description": "Renovate is the only updater, and GitHub's merge queue is the only merge mechanism. platformAutomerge enqueues natively instead of merging around the queue.",
 			"matchUpdateTypes": ["minor", "patch", "pin", "digest"],
 			"automerge": true
-		},
-		{
-			"description": "Majors break builds in ways CI catches but a human should choose to absorb.",
-			"matchUpdateTypes": ["major"],
-			"automerge": false
 		},
 		{
 			"description": "supports-color 9+ is ESM-only; standard-log-color ships a CommonJS build (see cjsCompat.spec.ts). Lift when the CJS build is dropped.",
